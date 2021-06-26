@@ -1,0 +1,358 @@
+* {
+    margin: 0px;
+    /* color: white; */
+}
+
+main {
+    width: 100%;
+    height: 2479px;
+    background-color: whitesmoke;
+}
+
+.container-fluid {
+    margin-left: 10px;
+}
+
+.caja1 {
+    height: 644px;
+    width: 100%;
+    /* display: flex; */
+    /* justify-content: center; */
+}
+
+#imagencaja1 {
+    height: 645px;
+    width: 100%;
+    justify-content: center;
+    position: absolute;
+}
+
+.textos {
+    width: 100%;
+    color: white;
+    position: relative;
+    top: 100px;
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+#textogrande {
+    font-family: 'Oswald', Helvetica, Arial, Lucida, sans-serif;
+    text-transform: uppercase;
+    font-size: 80px;
+    letter-spacing: 0.05em;
+    line-height: 1.5em;
+    display: flex;
+}
+
+.maquina-escribir {
+    background-color: #dca57d;
+}
+
+.maquina-escribir::after {
+    content: "";
+    border-left: wheat;
+    right: 0;
+    position: absolute;
+    animation: maquinaescribir 2s infinite alternate steps(2);
+}
+
+@keyframes maquinaescribir {
+    from {
+        width: 100%;
+    }
+    to {
+        width: 0;
+    }
+}
+
+#text1 {
+    font-family: 'Nunito', Helvetica, Arial, Lucida, sans-serif;
+    font-weight: 600;
+    font-size: 25px;
+    line-height: 1.9em;
+    display: block;
+    /* margin-top: -2px; */
+}
+
+.botonquien {
+    border-width: 10px!important;
+    text-decoration: none;
+    border-color: #dca57d;
+    border-radius: 0px;
+    letter-spacing: 3px;
+    font-size: 15px;
+    font-family: 'Oswald', Helvetica, Arial, Lucida, sans-serif!important;
+    text-transform: uppercase!important;
+    background-color: #dca57d;
+    color: white;
+    padding: 0.9em 1em!important;
+}
+
+#espacio {
+    margin-bottom: 58px;
+    margin-block-start: 18px;
+}
+
+#down {
+    background-color: transparent !important;
+    position: relative;
+    top: 201px;
+    border-bottom-color: transparent;
+    margin-left: 47%;
+}
+
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+body {
+    background-color: #111;
+}
+
+.title {
+    font-family: "Montserrat";
+    text-align: center;
+    color: #FFF;
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    flex-direction: column;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    justify-content: center;
+    letter-spacing: 1px;
+}
+
+h6 {
+    background-image: url(https://media.giphy.com/media/26BROrSHlmyzzHf3i/giphy.gif);
+    background-size: cover;
+    color: transparent;
+    -moz-background-clip: text;
+    -webkit-background-clip: text;
+    text-transform: uppercase;
+    font-size: 120px;
+    line-height: .75;
+    margin: 10px 0;
+}
+
+
+/* styling my button */
+
+.white-mode {
+    text-decoration: none;
+    padding: 7px 10px;
+    background-color: #122;
+    border-radius: 3px;
+    color: #FFF;
+    -webkit-transition: .35s ease-in-out;
+    transition: .35s ease-in-out;
+    position: absolute;
+    left: 15px;
+    bottom: 15px;
+    font-family: "Montserrat";
+}
+
+.white-mode:hover {
+    background-color: #FFF;
+    color: #122;
+}
+
+
+/*-----------------FIN CAJA 1 ---------------------*/
+
+#caja2 {
+    width: min(45%, 600px);
+    /* opacity: 0; */
+    margin-left: 28%;
+    position: absolute;
+    height: 579px;
+    top: 737px;
+}
+
+.centrado2 {
+    width: 100%;
+    color: dimgrey;
+    font-size: 43px;
+    font-family: 'Libre Baskerville', serif;
+    padding-left: 33%;
+}
+
+h3 {
+    font-family: 'Courgette', cursive;
+    color: dimgrey;
+    line-height: 43px;
+    text-align: -webkit-center;
+    /* position: static; */
+}
+
+
+/*------------------------------fin caja 2-----*/
+
+.centrado {
+    width: 100%;
+    color: dimgrey;
+    font-size: 43px;
+    font-family: 'Libre Baskerville', serif;
+    padding-left: 45%;
+}
+
+#caja3 {
+    height: 665px;
+    /* background-image: url(imagenes/Quepal.jpg); */
+}
+
+#caja3 img {
+    width: 100px;
+    height: 100px;
+    /* margin-left: 0%; */
+}
+
+.g-4,
+.gx-4 {
+    --bs-gutter-x: -6.5rem !important;
+}
+
+.card {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    background-color: transparent !important;
+    background-clip: border-box;
+    border: 0 !important;
+    border-radius: .25rem;
+    flex-wrap: wrap;
+    align-items: flex-end;
+    justify-content: space-between;
+    align-content: space-around;
+}
+
+#ola {
+    height: 83px;
+    overflow: hidden;
+}
+
+#ola2 {
+    height: 100%;
+    width: 100%;
+    background-image: url(imagenes/Quepal.jpg) !important;
+}
+
+
+/* prueba girar */
+
+.contenedor2 {
+    max-width: 1200px;
+    margin: 50px auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.contenedor_tarjeta {
+    margin: 20px;
+}
+
+.contenedor_tarjeta a {
+    display: inline-block;
+}
+
+.contenedor_tarjeta:hover figure {
+    transform: perspective(600px) rotateY(180deg);
+    -webkit-box-shadow: 0px 2px 10px 2px rgba(0, 0, 0, 0.25);
+    -moz-box-shadow: 0px 2px 10px 2px rgba(0, 0, 0, 0.25);
+    box-shadow: 0px 2px 10px 2px rgba(0, 0, 0, 0.25);
+}
+
+.contenedor_tarjeta:hover figure img {
+    /* Si queremos podemos aplicar un efecto blur a nuestra imagen al girar */
+    /*filter:blur(2px);*/
+}
+
+figure {
+    width: 102px;
+    height: 104px;
+    margin: 0;
+    position: relative;
+    transition: all ease .5s;
+    transform-style: preserve-3d;
+    transform: perspective(600px) rotateY(0deg);
+}
+
+figure .frontal,
+figure .trasera {
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+    transition: all ease .5s;
+}
+
+figure .frontal {
+    display: block;
+    background: transparent;
+}
+
+figure .trasera {
+    position: absolute;
+    top: 0;
+    padding: 20px;
+    color: #fff;
+    transform: perspective(600px) rotateY(180deg);
+    backface-visibility: hidden;
+    overflow: auto;
+}
+
+.contenedor_tarjeta:nth-child(1) figure .trasera {
+    background: rgba(223, 234, 241, 0.7);
+    background: -moz-linear-gradient(top, rgba(223, 234, 241, 0.7) 0%, rgb(162, 245, 151) 100%);
+    background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(153, 238, 128, 0.7)), color-stop(100%, rgba(15, 99, 144, 1)));
+    background: -webkit-linear-gradient(top, rgba(223, 234, 241, 0.7) 0%, rgb(53, 170, 53) 100%);
+    background: -o-linear-gradient(top, rgba(223, 234, 241, 0.7) 0%, rgb(55, 161, 69) 100%);
+    background: -ms-linear-gradient(top, rgba(223, 234, 241, 0.7) 0%, rgb(27, 134, 63) 100%);
+    background: linear-gradient(to bottom, rgba(223, 234, 241, 0.7) 0%, rgb(28, 131, 41) 100%);
+    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#dfeaf1', endColorstr='#0f6390', GradientType=0);
+}
+
+figure .trasera .titulo {
+    color: #fff;
+    font-weight: normal;
+    margin-bottom: 20px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+}
+
+figure .trasera hr {
+    height: 2px;
+    background: #fff;
+    border: none;
+    margin-bottom: 20px;
+    opacity: .5;
+}
+
+figure .trasera p {
+    font-family: 'Open Sans', sans-serif;
+    line-height: 22px;
+    font-size: 14px;
+}
+
+@media screen and (max-width: 992px) {
+    figure .trasera {
+        /*position: relative;*/
+        backface-visibility: visible;
+        transform: perspective(600px) rotateY(0deg);
+    }
+    .contenedor_tarjeta:hover figure {
+        transform: perspective(600px) rotateY(0deg);
+    }
+}
+
+#pos {
+    height: 780px;
+}
+
+
+/* -------------------PROYECTOS -------------------------*/
