@@ -20,3 +20,21 @@ $('.thumbnail').on('transitionend webkitTransitionEnd MSTransitionEnd', function
 
 
 // proyectos
+function addClass() {
+    document.body.classList.add("sent");
+}
+
+sendLetter.addEventListener("click", addClass);
+
+// CONTACTO 
+
+var Calcula = document.getElementsByClassName('form')
+Calcula.addEventListener('click', mostrar)
+
+function mostrar() {
+
+    var formulario = document.getElementsByClassName('form');
+
+    formulario.style.display = block;
+
+}

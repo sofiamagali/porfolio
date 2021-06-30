@@ -8,27 +8,72 @@
 
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
     <link rel="stylesheet" type="text/css" href="mounstro.css" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Courgettedisplay=swap" rel="stylesheet">
     <link rel="stylesheet" media="all" href="style2.css" />
     <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" media="all" href="style.css" />
+    <link rel="stylesheet" media="all" href="styleformulario.css" />
+    <link rel="stylesheet" media="all" href="styleboton.css" />
+    <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css'>
+    <link rel="stylesheet" href="./style.css">
 
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
 
     <title>Fuhrmann Sofia</title>
 </head>
 
 <body>
     <main>
+        <!-- NAV VAR-->
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container-fluid">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+                <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Sobre mi</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#"></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Sobre mi</a>
+                            </button>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Dropdown link
+                    </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                <li><a class="dropdown-item" href="#">Action</a></li>
+                                <li><a class="dropdown-item" href="#">Another action</a></li>
+                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!--CAJA 1-->
         <section class="caja1">
             <img id="imagencaja1" src="imagenes/Quepal.jpg">
             <div class="textos">
                 <div class="title">
                     <h6>Sofia<br/>Fuhrmann</h6>
                 </div>
-                <h5 id="espacio">Estudiante,Diseñadora web y programadora.</h5>
+                <h5 id="espacio">Estudiante, Diseñadora web y programadora.</h5>
                 <div id="animar"></div>
-                <a class="botonquien" href="#caja2">¿Quienes somos?</a>
+                <a class="botonquien" href="#caja2">Sobre mi</a>
+
             </div>
         </section>
         <section>
@@ -157,139 +202,269 @@
             <section id="caja2">
                 <p class="centrado2"> Sobre mi:</p>
                 <div id="presentacion">
-                    <h3> Hola,soy Sofía Fuhrmann Desarrolladora web FullStack,programadora y estudiante de Analista Programadora en la Universidad Nacional de La Plata.</h3>
+                    <h3> Hola,soy Sofía Fuhrmann Desarrolladora web FullStack, programadora y estudiante de Analista Programadora en la Universidad Nacional de La Plata.</h3>
                     <h3> Me encanta construir interfaces de usuario Responsive, que el usuario pueda disfrutar y pueda guiarse fácilmente a lo largo del sitio web</h3>
                     <h3>Mi objetivo es aprender todos los días, encontrando trabajo en una empresa que me permita crecer en el mundo IT y en la que pueda aportar con todos los conocimientos que he aprendido.</h3>
                 </div>
 
             </section>
         </section>
-        <!-- CAJA 3 -->
-        <section id="caja3">
-            <div class="row row-cols-1 row-cols-md-3 g-4">
-                <h2 class="centrado"> Habilidades </h2>
-                <div class="col">
-                    <div class="card">
-                        <div class="contenedor_tarjeta">
-                            <figure id="tarjeta">
-                                <img src="imagenes/ph/csslista.png" class="frontal" alt="">
-                                <figcaption class="trasera">
-                                    <h2 class="titulo">CSS</h2>
-                                    <hr>
-                                </figcaption>
-                            </figure>
-                        </div>
+        <!-------------------------------- CAJA 3 ---------------->
+        <P class="centrado ">Habilidades </P>
+        <section id="cards">
+            <div class="card-group">
+                <div class="card">
+                    <div class="contenedor_tarjeta">
+                        <figure id="tarjeta">
+                            <img src="imagenes/ph/htmllisto.png" class="frontal" alt="">
+                            <figcaption class="trasera">
+                                <h2 class="titulo">HTML</h2>
+                                <hr>
+                            </figcaption>
+                        </figure>
+                    </div>
+
+                </div>
+                <div class="card">
+                    <div class="contenedor_tarjeta">
+                        <figure id="tarjeta">
+                            <img src="imagenes/ph/csslista.png" class="frontal" alt="">
+                            <figcaption class="trasera">
+                                <h2 class="titulo">CSS</h2>
+                                <hr>
+                            </figcaption>
+                        </figure>
                     </div>
                 </div>
-                <div class="col">
-                    <div class="card">
-                        <div class="contenedor_tarjeta">
-                            <figure id="tarjeta">
-                                <img src="imagenes/ph/htmllisto.png" class="frontal" alt="">
-                                <figcaption class="trasera">
-                                    <h2 class="titulo">HTML</h2>
-                                    <hr>
-                                </figcaption>
-                            </figure>
-                        </div>
+                <div class="card">
+                    <div class="contenedor_tarjeta">
+                        <figure id="tarjeta">
+                            <img src="imagenes/ph/javalisto.png" class="frontal" alt="">
+                            <figcaption class="trasera">
+                                <h2 class="titulo">JAVA</h2>
+                                <hr>
+                            </figcaption>
+                        </figure>
                     </div>
                 </div>
-                <div class="col">
-                    <div class="card">
-                        <div class="contenedor_tarjeta">
-                            <figure id="tarjeta">
-                                <img src="imagenes/ph/javalisto.png" class="frontal" alt="">
-                                <figcaption class="trasera">
-                                    <h2 class="titulo">JAVA</h2>
-                                    <hr>
-                                </figcaption>
-                            </figure>
-                        </div>
+            </div>
+            <!-- CARD 2 -->
+            <div class="card-group">
+                <div class="card">
+                    <div class="contenedor_tarjeta">
+                        <figure id="tarjeta">
+                            <img src="imagenes/ph/jslisto.png" class="frontal" alt="">
+                            <figcaption class="trasera">
+                                <h2 class="titulo">JAVASCRIPT</h2>
+                                <hr>
+                            </figcaption>
+                        </figure>
+                    </div>
+
+                </div>
+                <div class="card">
+                    <div class="contenedor_tarjeta">
+                        <figure id="tarjeta">
+                            <img src="imagenes/ph/mysqllisto.png" class="frontal" alt="">
+                            <figcaption class="trasera">
+                                <h2 class="titulo">MYSQL</h2>
+                                <hr>
+                            </figcaption>
+                        </figure>
                     </div>
                 </div>
-                <div class="col">
-                    <div class="card">
-                        <div class="contenedor_tarjeta">
-                            <figure id="tarjeta">
-                                <img src="imagenes/ph/jslisto.png" class="frontal" alt="">
-                                <figcaption class="trasera">
-                                    <h2 class="titulo">JAVASCRIPT</h2>
-                                    <hr>
-                                </figcaption>
-                            </figure>
-                        </div>
+                <div class="card">
+                    <div class="contenedor_tarjeta">
+                        <figure id="tarjeta">
+                            <img src="imagenes/ph/phplisto.png" class="frontal" alt="">
+                            <figcaption class="trasera">
+                                <h2 class="titulo">PHP</h2>
+                                <hr>
+                            </figcaption>
+                        </figure>
                     </div>
                 </div>
-                <div class="col">
-                    <div class="card">
-                        <div class="contenedor_tarjeta">
-                            <figure id="tarjeta">
-                                <img src="imagenes/ph/mysqllisto.png" class="frontal" alt="">
-                                <figcaption class="trasera">
-                                    <h2 class="titulo">MYSQL</h2>
-                                    <hr>
-                                </figcaption>
-                            </figure>
-                        </div>
+            </div>
+            <!--CARD 3-->
+            <div class="card-group">
+                <div class="card">
+                    <div class="contenedor_tarjeta">
+                        <figure id="tarjeta">
+                            <img src="imagenes/ph/pascallisto.png" class="frontal" alt="">
+                            <figcaption class="trasera">
+                                <h2 class="titulo">Pascal</h2>
+                                <hr>
+                            </figcaption>
+                        </figure>
+                    </div>
+
+                </div>
+                <div class="card">
+                    <div class="contenedor_tarjeta">
+                        <figure id="tarjeta">
+                            <img src="imagenes/ph/ubuntulisto.png" class="frontal" alt="">
+                            <figcaption class="trasera">
+                                <h2 class="titulo">Ubuntu</h2>
+                                <hr>
+                            </figcaption>
+                        </figure>
                     </div>
                 </div>
-                <div class="col">
-                    <div class="card">
-                        <div class="contenedor_tarjeta">
-                            <figure id="tarjeta">
-                                <img src="imagenes/ph/phplisto.png" class="frontal" alt="">
-                                <figcaption class="trasera">
-                                    <h2 class="titulo">PHP</h2>
-                                    <hr>
-                                </figcaption>
-                            </figure>
-                        </div>
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="card">
-                        <div class="contenedor_tarjeta">
-                            <figure id="tarjeta">
-                                <img src="imagenes/ph/pascallisto.png" class="frontal" alt="">
-                                <figcaption class="trasera">
-                                    <h2 class="titulo">Pascal</h2>
-                                    <hr>
-                                </figcaption>
-                            </figure>
-                        </div>
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="card">
-                        <div class="contenedor_tarjeta">
-                            <figure id="tarjeta">
-                                <img src="imagenes/ph/ubuntulisto.png" class="frontal" alt="">
-                                <figcaption class="trasera">
-                                    <h2 class="titulo">Ubuntu</h2>
-                                    <hr>
-                                </figcaption>
-                            </figure>
-                        </div>
-                    </div>
-                </div>
-                <div class="col ">
-                    <div class="card ">
-                        <div class="contenedor_tarjeta">
-                            <figure id="tarjeta">
-                                <img src="imagenes/ph/officelisto.png" class="frontal" alt="">
-                                <figcaption class="trasera">
-                                    <h2 class="titulo">Office</h2>
-                                    <hr>
-                                </figcaption>
-                            </figure>
-                        </div>
+                <div class="card">
+                    <div class="contenedor_tarjeta">
+                        <figure id="tarjeta">
+                            <img src="imagenes/ph/officelisto.png" class="frontal" alt="">
+                            <figcaption class="trasera">
+                                <h2 class="titulo">Office</h2>
+                                <hr>
+                            </figcaption>
+                        </figure>
                     </div>
                 </div>
             </div>
         </section>
-        <!------------------------ PROYECTOSSSSSSS----------------------------------------------------------------------------------->
+        <!--------------- PROYECTOS -------------------->
+        <section class="pt-5 pb-5">
+            <div class="container">
+                <div class="row">
+                    <div class="col-6">
+                        <h3 class="mb-3">Proyectos </h3>
+                    </div>
+                    <div class="col-6 text-right">
+                        <a class="btn btn-primary mb-3 mr-1" href="#carouselExampleIndicators2" role="button" data-slide="prev">
+                            <i class="fa fa-arrow-left"></i>
+                        </a>
+                        <a class="btn btn-primary mb-3 " href="#carouselExampleIndicators2" role="button" data-slide="next">
+                            <i class="fa fa-arrow-right"></i>
+                        </a>
+                    </div>
+                    <div class="col-12">
+                        <div id="carouselExampleIndicators2" class="carousel slide" data-ride="carousel">
+
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <div class="row">
+
+                                        <div class="col-md-4 mb-3">
+                                            <div class="card">
+                                                <div class="boxx boxx-1">
+                                                    <div class="cover">
+                                                        <a href="https://sofiamagali.github.io/arquiwork/">
+                                                            <img src="imgproyectos/arquiwork.png" alt=""></div>
+                                                    </a>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4 mb-3">
+                                            <div class="card">
+                                                <div class="boxx boxx-1">
+                                                    <a href="http://cursophp.foxit.com.ar/comision2115/Sofia_fuhrmann/js/pruebas/proyectocalculadora/calculadora.html">
+                                                        <div class="cover"><img src="imgproyectos/calculadora.png" alt=""></div>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4 mb-3">
+                                            <div class="card">
+                                                <div class="boxx boxx-3">
+                                                    <a href="http://cursophp.foxit.com.ar/comision2115/Sofia_fuhrmann/desafiomostro/">
+                                                        <div class="cover"><img src="imgproyectos/mostro.png" alt=""></div>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                                <!-- cambio slid-->
+                                <div class="carousel-item">
+                                    <div class="row">
+                                        <div class="col-md-4 mb-3">
+                                            <div class="card">
+                                                <div class="boxx boxx-3">
+                                                    <a href="https://sofiamagali.github.io/ecomundo/">
+                                                        <div class="cover"><img src="imgproyectos/eco.png" alt=""></div>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4 mb-3">
+                                            <div class="card">
+                                                <div class="boxx boxx-1">
+                                                    <a href="http://cursophp.foxit.com.ar/comision2115/Sofia_fuhrmann/google/google.html">
+                                                        <div class="cover"><img src="imgproyectos/google.png" alt=""></div>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4 mb-3">
+                                            <div class="card">
+                                                <div class="boxx boxx-3">
+                                                    <a href="http://cursophp.foxit.com.ar/comision2115/Sofia_fuhrmann/CSS/IntegradorCSS/">
+                                                        <div class="cover"><img src="imgproyectos/inmo.png" alt=""></div>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </section>
 
     </main>
-</body>
+    <!--------------- footer -------------------->
+
+    <footer id="footer">
+
+        <footer class="bg-dark text-center text-white">
+
+
+            <!-- Grid container -->
+            <div class="social-btns"><a class="btn facebook" href="#"><i class="fa fa-facebook"></i></a><a class="btn twitter" href="#"><i class="fa fa-twitter"></i></a><a class="btn google" href="#"><i class="fa fa-google"></i></a><a class="btn dribbble" href="#"><i class="fa fa-dribbble"></i></a>
+                <a class="btn skype" href="#"><i class="fa fa-skype"></i></a>
+            </div>
+            <!-- Copyright -->
+            <div class="text-center p-3">
+                © 2020 Copyright:
+                <a class="text-white" href="https://mdbootstrap.com/">FuhrmannSofia</a>
+            </div>
+            <!-- Copyright -->
+        </footer>
+
+        <body class="contactBody">
+            <div class="wrapper">
+                <div class="title">
+                </div>
+                <form class="form">
+                    <input type="text" class="name entry " placeholder="Your Name" />
+
+                    <input type="text" class="email entry" placeholder="Email" />
+
+                    <textarea class="message entry" placeholder="Message"></textarea>
+
+                    <button class="submit entry" onclick="thanks()">Submit</button>
+                </form>
+
+                <div class="shadow"></div>
+            </div>
+
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="app.js"></script>
+    <script type="text/javascript" src="scriptsboton.js"></script>
+
+
+    </body>
+
 
 </html>
