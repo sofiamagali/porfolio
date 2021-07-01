@@ -550,7 +550,7 @@ footer {
     display: flex;
     height: 780px;
     width: 100%;
-    position: absolute;
+    margin-top: 70px;
     flex-direction: column;
     flex-wrap: nowrap;
     align-content: flex-start;
