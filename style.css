@@ -8,7 +8,7 @@ button {
     width: 180px;
     height: 48px;
     border-radius: 8px;
-    background-color: #2C3138;
+    /* background-color: #2C3138; */
     margin-top: 40px;
     overflow: hidden;
     -webkit-transform: scale(.7);
