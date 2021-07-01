@@ -40,19 +40,19 @@
                 <div class="collapse navbar-collapse" id="navbarNavDropdown">
                     <ul class="navbar-nav">
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#">Sobre mi</a>
+                            <a class="nav-link active" aria-current="page" href="#caja2">Sobre mi</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#"></a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#">Sobre mi</a>
+                            <a class="nav-link active" aria-current="page" href="#cards">Habilidades</a>
                             </button>
                         </li>
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                      Dropdown link
-                    </a>
+                  Dropdown link
+                </a>
                             <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
                                 <li><a class="dropdown-item" href="#">Action</a></li>
                                 <li><a class="dropdown-item" href="#">Another action</a></li>
@@ -70,8 +70,10 @@
                 <div class="title">
                     <h6>Sofia<br/>Fuhrmann</h6>
                 </div>
-                <h5 id="espacio">Estudiante, Diseñadora web y programadora.</h5>
-                <div id="animar"></div>
+                <div id="botones">
+                    <a href="https://github.com/sofiamagali" class="btn btn-secondary btn-lg disabled" role="button" aria-disabled="true"><img src="imagenes/github.png" alt="cv"></a>
+                    <a href="https://drive.google.com/file/d/1wIcwBnZqfL3uTT5egObV9yohbXXNmhON/view?usp=sharing" class="btn btn-secondary btn-lg disabled" role="button" aria-disabled="true"><img src="imagenes/cv.png" alt="cv"></a>
+                </div>
                 <a class="botonquien" href="#caja2">Sobre mi</a>
 
             </div>
@@ -212,6 +214,7 @@
         <!-------------------------------- CAJA 3 ---------------->
         <P class="centrado ">Habilidades </P>
         <section id="cards">
+            <div id="cuadro"></div>
             <div class="card-group">
                 <div class="card">
                     <div class="contenedor_tarjeta">
@@ -421,42 +424,46 @@
 
     </main>
     <!--------------- footer -------------------->
-
     <footer id="footer">
-
-        <footer class="bg-dark text-center text-white">
-
-
-            <!-- Grid container -->
-            <div class="social-btns"><a class="btn facebook" href="#"><i class="fa fa-facebook"></i></a><a class="btn twitter" href="#"><i class="fa fa-twitter"></i></a><a class="btn google" href="#"><i class="fa fa-google"></i></a><a class="btn dribbble" href="#"><i class="fa fa-dribbble"></i></a>
-                <a class="btn skype" href="#"><i class="fa fa-skype"></i></a>
-            </div>
-            <!-- Copyright -->
-            <div class="text-center p-3">
-                © 2020 Copyright:
-                <a class="text-white" href="https://mdbootstrap.com/">FuhrmannSofia</a>
-            </div>
-            <!-- Copyright -->
-        </footer>
-
-        <body class="contactBody">
-            <div class="wrapper">
-                <div class="title">
+        <div class="container">
+            <div class="row input-container">
+                <div class="col-xs-12">
+                    <div class="styled-input wide">
+                        <input type="text" required />
+                        <label>Name</label>
+                    </div>
                 </div>
-                <form class="form">
-                    <input type="text" class="name entry " placeholder="Your Name" />
-
-                    <input type="text" class="email entry" placeholder="Email" />
-
-                    <textarea class="message entry" placeholder="Message"></textarea>
-
-                    <button class="submit entry" onclick="thanks()">Submit</button>
-                </form>
-
-                <div class="shadow"></div>
+                <div class="col-md-6 col-sm-12">
+                    <div class="styled-input">
+                        <input type="text" required />
+                        <label>Email</label>
+                    </div>
+                </div>
+                <div class="col-md-6 col-sm-12">
+                    <div class="styled-input" style="float:right;">
+                        <input type="text" required />
+                        <label>Phone Number</label>
+                    </div>
+                </div>
+                <div class="col-xs-12">
+                    <div class="styled-input wide">
+                        <textarea required></textarea>
+                        <label>Message</label>
+                    </div>
+                </div>
+                <div class="col-xs-12">
+                    <div class="btn-lrg submit-btn">Send Message</div>
+                </div>
             </div>
-
+        </div>
+        <!-- Copyright -->
+        <div class="text-center p-3">
+            © 2020 Copyright:
+            <a class="text-white" href="https://mdbootstrap.com/">FuhrmannSofia</a>
+        </div>
+        <!-- Copyright -->
     </footer>
+
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
@@ -464,7 +471,7 @@
     <script type="text/javascript" src="scriptsboton.js"></script>
 
 
-    </body>
+</body>
 
 
 </html>

@@ -492,7 +492,9 @@ a.btn.btn-primary.mb-3 {
 footer {
     background-image: url(imagenes/Quepal.jpg);
     display: flex;
-    height: 200px;
+    height: 818px;
+    width: 100%;
+    position: absolute;
     flex-direction: column;
     flex-wrap: nowrap;
     align-content: flex-start;
