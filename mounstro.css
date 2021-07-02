@@ -421,16 +421,21 @@
                                     color: dimgrey;
                                     font-size: 43px;
                                     font-family: 'Courgette', cursive;
-                                    padding-left: 75%;
+                                    padding-left: 70%;
                                 }
                                 
                                 @media (max-width: 360px) {
-                                    .centrado4 {
+                                    .centrado3 {
                                         font-size: 38px !important;
-                                        margin-left: 113px;
+                                        margin-left: -26px;
                                         margin-top: 12px !important;
                                     }
-                                    h1.centrado4 {}
+                                }
+                                
+                                @media (max-width: 360px) {
+                                    #botonmover {
+                                        background-image: url(imagenes/flecha-doble.png);
+                                    }
                                 }
                                 
                                 .centrado4 {
@@ -534,7 +539,7 @@
                                 #ola2 {
                                     height: 100%;
                                     width: 100%;
-                                    background-image: url(imagenes/Quepal.jpg) !important;
+                                    background-image: url(imagenes/Quepal2.jpg) !important;
                                 }
                                 /* prueba girar */
                                 
@@ -788,7 +793,6 @@
                                 }
                                 
                                 a.btn.btn-primary.mb-3.mr-1 {
-                                    /* background-image: url(imagenes/flecha-correcta.png) !important; */
                                     margin-left: -53px;
                                     background-color: transparent;
                                 }
