@@ -25,32 +25,61 @@
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
+    <!-- navbarreset -->
 
+    <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="navbar/css/reset.css">
+    <!-- CSS reset -->
+    <link rel="stylesheet" href="navbar/css/style.css">
+    <!-- Resource style -->
+    <script src="navbar/js/modernizr.js"></script>
     <title>Fuhrmann Sofia</title>
 </head>
 
 <body>
     <main>
-        <!-- NAVBAR-->
-        <input type='checkbox' id='mmeennuu'>
-        <label class='menu' for='mmeennuu'>
-    
-    <div class='barry'>
-        <span class='bar'></span>
-        <span class='bar'></span>
-        <span class='bar'></span>
-    </div>
-        
-    <ul>
-        <li><a id='home' href="#caja2">Sobre mi</a></li>
-        <li><a id='about' href="https://www.linkedin.com/in/sofia-fuhrmann/">Linkedin</a></li>
-              
-        <li><a id='contact' href="https://drive.google.com/file/d/1wIcwBnZqfL3uTT5egObV9yohbXXNmhON/view?usp=sharing ">Curriculum</a></li>
-              
-        <li><a id='link' href="https://github.com/sofiamagali">Github</a></li>
-    </ul>
-    
-    </label>
+        <!-- NAVBAR
+        <section id="movernav">
+            <input type='checkbox' id='mmeennuu'>
+            <label class='menu' for='mmeennuu'>
+            
+            <div class='barry'>
+                <span class='bar'></span>
+                <span class='bar'></span>
+                <span class='bar'></span>
+            </div>
+                
+            <ul>
+                <li><a id='home' href="#caja2">Sobre mi</a></li>
+                <li><a id='about' href="https://www.linkedin.com/in/sofia-fuhrmann/">Linkedin</a></li>
+                    
+                <li><a id='contact' href="https://drive.google.com/file/d/1wIcwBnZqfL3uTT5egObV9yohbXXNmhON/view?usp=sharing ">Curriculum</a></li>
+                    
+                <li><a id='link' href="https://github.com/sofiamagali">Github</a></li>
+            </ul>
+            
+            </label>
+        </section>-->
+
+        <nav class="cd-stretchy-nav">
+            <a class="cd-nav-trigger" href="#0">
+
+                <span aria-hidden="true"></span>
+            </a>
+
+            <ul>
+                <li><a href="caja1" class="active"><span>Inicio</span></a></li>
+                <li>
+                    <a href="https://drive.google.com/file/d/1wIcwBnZqfL3uTT5egObV9yohbXXNmhON/view?usp=sharing"> <span>Curriculum</span></a>
+                </li>
+                <li><a href="https://github.com/sofiamagali">Github</span></a></li>
+                <li><a href="https://www.linkedin.com/in/sofia-fuhrmann/">Linkedin</span></a></li>
+                <li><a href="#0"><span>Contact</span></a></li>
+            </ul>
+
+            <span aria-hidden="true" class="stretchy-nav-bg"></span>
+        </nav>
+
 
         <!--CAJA 1-->
         <section class="caja1">
@@ -479,6 +508,8 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
     <script src="app.js"></script>
     <script type="text/javascript" src="scriptsboton.js"></script>
+    <script src="navbar/js/jquery-2.1.4.js"></script>
+    <script src="navbar/js/main.js"></script>
 
 </body>
 
