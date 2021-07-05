@@ -4,7 +4,7 @@
 <head>
     <!-- Required meta tags -->
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0" crossorigin="anonymous">
@@ -32,41 +32,26 @@
 <body>
     <main>
         <!-- NAVBAR-->
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
-            <div class="container-fluid">
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-              </button>
-                <div class="collapse navbar-collapse" id="navbarNavDropdown">
-                    <ul class="navbar-nav">
-                        <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#caja2">Sobre mi</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#"></a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#cards">Habilidades</a>
-                            </button>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="https://drive.google.com/file/d/1wIcwBnZqfL3uTT5egObV9yohbXXNmhON/view?usp=sharing ">Curriculum</a>
-                            </button>
-                        </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                             Redes
-                            </a>
-                            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                                <a class="dropdown-item" href="https://github.com/sofiamagali">Github</a>
-                                <a class="dropdown-item" href="https://www.linkedin.com/in/sofia-fuhrmann/">Linkedin</a>
-                            </div>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
-        </nav>
+        <input type='checkbox' id='mmeennuu'>
+        <label class='menu' for='mmeennuu'>
+    
+    <div class='barry'>
+        <span class='bar'></span>
+        <span class='bar'></span>
+        <span class='bar'></span>
+    </div>
+        
+    <ul>
+        <li><a id='home' href="#caja2">Sobre mi</a></li>
+        <li><a id='about' href="https://www.linkedin.com/in/sofia-fuhrmann/">Linkedin</a></li>
+              
+        <li><a id='contact' href="https://drive.google.com/file/d/1wIcwBnZqfL3uTT5egObV9yohbXXNmhON/view?usp=sharing ">Curriculum</a></li>
+              
+        <li><a id='link' href="https://github.com/sofiamagali">Github</a></li>
+    </ul>
+    
+    </label>
+
         <!--CAJA 1-->
         <section class="caja1">
             <img id="imagencaja1" src="imagenes/Quepal.jpg">
@@ -446,7 +431,7 @@
                     <div class="col-xs-12">
                         <div class="styled-input wide">
                             <input type="text" required />
-                            <label>Name</label>
+                            <label>Nombre</label>
                         </div>
                     </div>
                     <div class="col-md-6 col-sm-12">
@@ -458,13 +443,13 @@
                     <div class="col-md-6 col-sm-12">
                         <div class="styled-input" style="float:right;">
                             <input type="text" required />
-                            <label>Phone Number</label>
+                            <label>Celular</label>
                         </div>
                     </div>
                     <div class="col-xs-12">
                         <div class="styled-input wide">
                             <textarea required></textarea>
-                            <label>Message</label>
+                            <label>Mensaje</label>
                         </div>
                     </div>
                     <div class="col-xs-12">
