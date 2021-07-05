@@ -557,6 +557,7 @@ h3 {
     font-size: 43px;
     font-family: fangsong;
     padding-left: 70%;
+    text-decoration: underline;
 }
 
 @media (max-width: 360px) {
@@ -578,6 +579,7 @@ h3 {
     color: dimgrey;
     font-size: 45px;
     margin-top: 10px;
+    text-decoration: underline;
     padding-left: 16%;
 }
 
@@ -593,6 +595,7 @@ h3 {
     font-size: 45px;
     margin-top: 10px;
     padding-left: 43%;
+    text-decoration: underline;
 }
 
 @media (max-width: 360px) {
@@ -817,6 +820,7 @@ section#proyec {
 @media (max-width: 1366px) {
     #proyec {
         margin-top: 100px;
+        margin-left: 86px;
     }
 }
 
@@ -945,8 +949,8 @@ input[type=checkbox]:checked+label {
 
 a.btn.btn-primary.mb-3.mr-1 {
     background-image: url(imagenes/flecha-correcta.png) !important;
-    width: 27px;
-    height: 28px;
+    width: 29px;
+    height: 29px;
     margin-left: -53px;
     background-color: transparent;
 }
