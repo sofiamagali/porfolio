@@ -25,6 +25,7 @@
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
+
     <!-- navbarreset -->
 
     <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700' rel='stylesheet' type='text/css'>
@@ -72,9 +73,11 @@
                 <li>
                     <a href="https://drive.google.com/file/d/1wIcwBnZqfL3uTT5egObV9yohbXXNmhON/view?usp=sharing"> <span>Curriculum</span></a>
                 </li>
-                <li><a href="https://github.com/sofiamagali">Github</span></a></li>
-                <li><a href="https://www.linkedin.com/in/sofia-fuhrmann/">Linkedin</span></a></li>
-                <li><a href="#0"><span>Contact</span></a></li>
+                <li id="git"><a href="https://github.com/sofiamagali">Github</span></a></li>
+                <li id="lin"><a href="https://www.linkedin.com/in/sofia-fuhrmann/">Linkedin</span></a></li>
+                <li><a href="#footer"><span>Contacto</span></a></li>
+                <li><a href="PORTFOLIO.html"><span>Portfolio</span></a></li>
+
             </ul>
 
             <span aria-hidden="true" class="stretchy-nav-bg"></span>
@@ -356,160 +359,76 @@
                     </div>
                 </section>
             </section>
-            <!--------------- PROYECTOS -------------------->
-            <section id="proyec">
-                <section class="pt-5 pb-5">
-                    <div class="container">
-                        <div class="col-6">
-                            <h4 class="centrado3">Proyectos </h4>
-                        </div>
-                        <div id="mover">
-                            <div class="col-11 text-right">
-                                <a class="btn btn-primary mb-3 mr-1" href="#carouselExampleIndicators2" role="button" data-slide="prev">
-                                </a>
 
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-12">
-                                <div id="carouselExampleIndicators2" class="carousel slide" data-ride="carousel">
-                                    <div class="carousel-inner">
-                                        <div class="carousel-item active">
-                                            <div class="row" id="cajas">
-                                                <div class="col-md-4 mb-3">
-                                                    <div class="card">
-                                                        <div class="boxx boxx-1">
-                                                            <div class="cover">
-                                                                <a href="https://sofiamagali.github.io/arquiwork/">
-                                                                    <img src="imgproyectos/arquiwork.png" alt=""></div>
-                                                            </a>
-                                                        </div>
-
-                                                    </div>
-                                                </div>
-                                                <div class="col-md-4 mb-3">
-                                                    <div class="card">
-                                                        <div class="boxx boxx-1">
-                                                            <a href="http://cursophp.foxit.com.ar/comision2115/Sofia_fuhrmann/js/pruebas/proyectocalculadora/calculadora.html">
-                                                                <div class="cover"><img src="imgproyectos/calculadora.png" alt=""></div>
-                                                            </a>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="col-md-4 mb-3">
-                                                    <div class="card">
-                                                        <div class="boxx boxx-3">
-                                                            <a href="http://cursophp.foxit.com.ar/comision2115/Sofia_fuhrmann/desafiomostro/">
-                                                                <div class="cover"><img src="imgproyectos/mostro.png" alt=""></div>
-                                                            </a>
-                                                        </div>
-                                                    </div>
-                                                </div>
-
-                                            </div>
-                                        </div>
-                                        <!-- cambio slid-->
-                                        <div class="carousel-item">
-                                            <div class="row">
-                                                <div class="col-md-4 mb-3">
-                                                    <div class="card">
-                                                        <div class="boxx boxx-3">
-                                                            <a href="https://sofiamagali.github.io/ecomundo/">
-                                                                <div class="cover"><img src="imgproyectos/eco.png" alt=""></div>
-                                                            </a>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="col-md-4 mb-3">
-                                                    <div class="card">
-                                                        <div class="boxx boxx-1">
-                                                            <a href="http://cursophp.foxit.com.ar/comision2115/Sofia_fuhrmann/google/google.html">
-                                                                <div class="cover"><img src="imgproyectos/google.png" alt=""></div>
-                                                            </a>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="col-md-4 mb-3">
-                                                    <div class="card">
-                                                        <div class="boxx boxx-3">
-                                                            <a href="http://cursophp.foxit.com.ar/comision2115/Sofia_fuhrmann/CSS/IntegradorCSS/">
-                                                                <div class="cover"><img src="imgproyectos/inmo.png" alt=""></div>
-                                                            </a>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
+            <!--------------- footer -------------------->
+            <footer id="footer">
+                <div id="pos">
+                    <h1 class="centrado4">Contacto</h1>
+                    <div action="enviar.php" method="POST" class="container">
+                        <form>
+                            <div class="row input-container">
+                                <div class="col-xs-12">
+                                    <div class="styled-input wide">
+                                        <input name="nombre" type="text" required />
+                                        <label>Nombre</label>
                                     </div>
                                 </div>
+                                <div class="col-md-6 col-sm-12">
+                                    <div class="styled-input">
+                                        <input type="text" required />
+                                        <label>Email</label>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 col-sm-12">
+                                    <div class="styled-input" style="float:right;">
+                                        <input name="celular" type="text" required />
+                                        <label>Celular</label>
+                                    </div>
+                                </div>
+                                <div class="col-xs-12">
+                                    <div class="styled-input wide">
+                                        <textarea required></textarea>
+                                        <label name="msj">Mensaje</label>
+                                    </div>
+                                </div>
+                                <div class="col-xs-12">
+                                    <input type="submit" class="btn-lrg submit-btn">
+                                    <a href="https://api.whatsapp.com/send?phone=5493516342592&text=Hola!%20Me%20comunico%20desde%20tu porfolio!">Contacto directo a <i class="fa fa-whatsapp" aria-hidden="true"></i></a>
+                                </div>
                             </div>
-                        </div>
-                    </div>
-                    </div>
-                </section>
-
-            </section>
-        </section>
-    </main>
-    <!--------------- footer -------------------->
-    <footer id="footer">
-        <div id="pos">
-            <h1 class="centrado4">Contacto</h1>
-            <div class="container">
-                <div class="row input-container">
-                    <div class="col-xs-12">
-                        <div class="styled-input wide">
-                            <input type="text" required />
-                            <label>Nombre</label>
-                        </div>
-                    </div>
-                    <div class="col-md-6 col-sm-12">
-                        <div class="styled-input">
-                            <input type="text" required />
-                            <label>Email</label>
-                        </div>
-                    </div>
-                    <div class="col-md-6 col-sm-12">
-                        <div class="styled-input" style="float:right;">
-                            <input type="text" required />
-                            <label>Celular</label>
-                        </div>
-                    </div>
-                    <div class="col-xs-12">
-                        <div class="styled-input wide">
-                            <textarea required></textarea>
-                            <label>Mensaje</label>
-                        </div>
-                    </div>
-                    <div class="col-xs-12">
-                        <div class="btn-lrg submit-btn">Enviar</div>
                     </div>
                 </div>
-            </div>
-            <div id="botones">
-                <a href="https://github.com/sofiamagali" role="button" class="btn btn-secondary btn-lg disabled" role="button" aria-disabled="true"><img src="imagenes/github.png" alt="cv"></a>
-                <a href="https://drive.google.com/file/d/1wIcwBnZqfL3uTT5egObV9yohbXXNmhON/view?usp=sharing" class="btn btn-secondary btn-lg disabled" role="button" aria-disabled="true"><img src="imagenes/cv.png" alt="cv"></a>
-            </div>
-            <!-- Copyright -->
-            <div class="text-center p-3">
-                © 2020 Copyright:
-                <a class="text-white" href="https://mdbootstrap.com/">FuhrmannSofia</a>
+                </form>
+                <div id="botones">
 
-            </div>
-            <div id="animacionmsj">
-                <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
-                <lottie-player src="https://assets6.lottiefiles.com/packages/lf20_bp1bwvhv.json" background="rgba(0, 0, 0, 0)" speed="1" style="width: 220px; height: 220px;" loop autoplay></lottie-player>
-            </div>
-        </div>
-    </footer>
+                    <a href="https://github.com/sofiamagali">
+                        <img src="imagenes/github.png" alt="gith">
+                    </a>
 
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-    <script src="app.js"></script>
-    <script type="text/javascript" src="scriptsboton.js"></script>
-    <script src="navbar/js/jquery-2.1.4.js"></script>
-    <script src="navbar/js/main.js"></script>
+                    <a href="https://drive.google.com/file/d/1wIcwBnZqfL3uTT5egObV9yohbXXNmhON/view?usp=sharing">
+                        <img src="imagenes/cv.png" alt="cv">
+                    </a>
+                </div>
+                <!-- Copyright -->
+                <div class="text-center p-3">
+                    © 2020 Copyright:
+                    <a class="text-white" href="https://mdbootstrap.com/">FuhrmannSofia</a>
+
+                </div>
+                <div id="animacionmsj">
+                    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+                    <lottie-player src="https://assets6.lottiefiles.com/packages/lf20_bp1bwvhv.json" background="rgba(0, 0, 0, 0)" speed="1" style="width: 220px; height: 220px;" loop autoplay></lottie-player>
+                </div>
+                </div>
+            </footer>
+
+            <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+            <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+            <script src="app.js"></script>
+            <script type="text/javascript" src="scriptsboton.js"></script>
+            <script src="navbar/js/jquery-2.1.4.js"></script>
+            <script src="navbar/js/main.js"></script>
 
 </body>
 
